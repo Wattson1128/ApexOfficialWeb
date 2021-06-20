@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ApexHub</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img\newplan\WebLogo.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .zj{
+      left: 50%;
+      right: 50%;
+      position:absolute;
+    }
+    .nabar{  
+      font-size: large;
+      font-weight: bold;
+    }
+    .nabar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.nabar li {
+  float: left;
+}
+
+.nabar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.nabar li a:hover {
+  color: red;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1f1b1b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:center;
+}
+.dropdown-content a:hover {background-color: #352e2e;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.BGnews{
+  background-color: #111;
+  height: 520px;
+  border-bottom:7px solid red;
+}
+.BGnews p{
+  
+  text-align: left;
+  font-size: large;
+  color:white;
+  font-weight: bold;
+}
+.BGnews h4{
+  
+  text-align: left;
+  color: white;
+}
+.BGnews h6{
+  text-align: left;
+  color: rgb(192, 0, 0);
+  font-family: fantasy;
+  
+}
+.CTnews{
+  display: inline;position:relative;left: 8px;
+}
+.valk{
+  padding: 12%;
+  overflow: hidden;
+}
+.valk h1{
+  color: white;
+  font-weight:100;
+  font-size: 4rem;
+}
+.valk p{
+  color: white;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+.lastP{
+  text-align: center;
+  font-weight: bold;
+}
+.lastP p{
+  font-size: large;
+}
+.lastP h4{
+  font-weight: bold;
+}
+.lastP img{
+  max-width: 120%;
+  padding-bottom: 40px;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Main navigation -->
+  <header style="height: 80%;">
+    <!-- Navbar -->
+    <nav style="position: sticky;  position: -webkit-sticky;   top: 0;">
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <div id="navbarTogglerDemo02" class="nabar">
+          <ul>
+            <li>
+              <a  href="#" data-offset="90"><img style="padding: 0rem 1rem 0rem 1rem;" src="img\newplan\Headlogo.png" alt="HeadLogo"></a>
+            </li>
+            <li>
+              <a href="#about" data-offset="90">传奇与武器</a>
+            </li>
+            <li>
+              <a href="#gallery" data-offset="90">同人</a>
+            </li>
+            <li>
+              <a href="#articles" data-offset="90">小故事</a>
+            </li>
+            <li class="dropdown" style="float:right;padding:0px 14px;background-color: red;border-radius: 10px;">
+              <a href="https://www.ea.com/zh-tw/games/apex-legends/play-now-for-free" data-offset="90" class="dropbtn">免费下载</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+          </ul>
+          <!-- Social Icon  -->
+          
+        </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    <div class="view">
+      <video class="video-intro" poster="img\newplan\BG_headreal2.png" playsinline autoplay muted loop>
+        <source src="" type="video/mp4">
+      </video>
+      <!--<img class="img-intro" src="img\newplan\BG_head2.png" alt="HeadBackground">-->
+      <!-- Mask & flexbox options-->
+      <div class="mask d-flex justify-content-center align-items-center container">
+        <!-- Content -->
+        <div class="col-6"></div>
+        <div class="col-6">
+          <!--Grid row-->
+          <div class="row wow fadeIn container-fluid" style="position: relative; bottom: 70px">
+            <!--Grid column-->
+            <div class=" white-text text-center wow fadeIn">
+              <!--<h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Apex Legends个人中文网</h3>-->
+              <img style="margin: auto;min-width: 40%;min-height: 40%;" src="img\newplan\apex-hero-large-light-logo-cn.svg" alt="svg">
+              <p class="subtext-header mt-2 mb-4" style="max-width: 60%;max-height: 35%;position: relative;margin: auto;">選擇你的角色、 召集你的小隊、 讓大家見識英雄們的實力
+                適用於 PlayStation® 4、PlayStation 5、Xbox One、Xbox Series X|S、Nintendo Switch、與 PC 上的 Origin 和 Steam。</p>
+              <a href="https://www.ea.com/zh-tw/games/apex-legends/play-now-for-free" class="btn btn-outline-white" style="font-size: medium;">
+                 立即免費游玩
+              </a><!--i这里指图标-->
+              <a href="https://youtu.be/1P8yaTxKpp4" class="btn btn-outline-white" style="font-size: medium;">
+                 观赏预告片
+              </a><!--i这里指图标-->
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+  </header>
+  <!--Main layout-->
+  <main>
+
+    <!--Section: about-->
+    <!--Section: about-->
+
+    <!--Section: projects-->
+    <section id="projects" class="text-center py-5" style="background-image: url('./img/newplan/webBG02.jpg');">
+
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5" style="padding: 2rem;">最新消息</h2>
+        <!-- Section description -->
+
+        <!-- Grid row -->
+        <div class="row text-center">
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1 BGnews">
+              <img src="img\newplan\NEWS1.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a href="https://www.ea.com/zh-tw/games/apex-legends/news/prime-gaming-offer-sakura-steel-revenant">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <!--Excerpt-->
+              <div class="card-body pb-2">
+                <h6>APEXLEGENDS<p class="CTnews">2021/6/8</p></h6>
+                <h4 class="font-weight-bold my-3">用这款twitch pro专属皮肤让亡灵在战场上独领风骚<p></p></h4>
+                <p class="grey-text">与老鼠台携手做猪王峡谷最凉的靓仔（盒子）！
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4"">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1 BGnews">
+              <img src="img\newplan\NEWS2.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a href="https://www.ea.com/zh-tw/games/apex-legends/news/algs-championship-twitch-drops">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <!--Excerpt-->
+              <div class="card-body pb-2">
+                
+                <h6>APEXLEGENDS<p class="CTnews">2021/6/8</p></h6>
+                <h4 class="font-weight-bold my-3">
+                  截看《Apex英雄》全球系列寰冠审寰泱赛亚玃得奖励
+                  </h4>
+                <p class="grey-text">在6月12日奥13日华畤收看北美舆EMEA的ALGS冠审赛决赛来玃得Twitch Drops
+
+                </p>
+             </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1 BGnews">
+              <img src="img\newplan\NEWS3.PNG" class="img-fluid"
+                alt="Sample project image">
+              <a href="https://www.ea.com/zh-tw/games/apex-legends/news/algs-championship-twitch-drops">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <!--Excerpt-->
+              <div class="card-body pb-2">
+                
+                <h6>APEXLEGENDS<p class="CTnews">2021/6/11</p></h6>
+                <h4 class="font-weight-bold my-3">解锁社群创建的 Twitch Drops</h4>
+                <p class="grey-text">今天起，收看“Apex英雄”直播即可透过Twitch Drops取得社群创建载入書面
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Container -->
+
+    </section>
+    
+    <!--Section: projects-->
+    <section>
+      <div  style="background-image: url(./img/newplan/瓦尔基里介绍.jpg);">
+        <div class="valk container">
+          <h1 style="text-align: center;">瓦尔基里-天空霸主</h1>
+          <p style="text-align: center;">今原香衣璃性格大胆、傲慢、火辣有凶残，她从小生活在父亲的传奇阴影下。如今，她已准备好自力更生。
+          </p>
+          <div class="text-center">
+            <a href="https://www.ea.com/zh-tw/games/apex-legends/about/characters/valkyrie" class="btn btn-outline-white" style="font-size:larger;">
+            认识瓦尔基里</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: gallery-->
+
+      <!-- Container -->
+
+    <!--Section: about-->
+    <!--Section: call to action-->
+
+    <div style="background-image:url('./img/newplan/BGlastP.jpg')"><!--这里要用左斜杠-->
+      <div class="flex-center white-text rgba-black-light pattern-1">
+          <div class="container-fluid" style="padding: 100px;">
+            <h1 class="text-center" style="text-align: center;font-weight: bold;">不只是大逃杀</h1>
+            <h4 style="text-align: center;font-weight: bold; padding: 30px;">在Apex英雄中展现你的实力，这是一款免费游玩的英雄设计游戏，其中的挑战者来自边境各处为了荣耀、名誉财富而战。</h4>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col lastP"><img src="img\newplan\奖杯.png" class="container">
+               <h4>传奇角色</h4>
+                <p>探索不断增加的强大英雄，他们各自拥有独特的性格，特长和技能。</p></div>
+                <div class="col lastP"><img src="img\newplan\小帮手.png" class="container">
+                <h4>传奇角色</h4>
+                 <p>探索不断增加的强大英雄，他们各自拥有独特的性格，特长和技能。</p></div>
+                 <div class="col lastP"><img src="img\newplan\爆头.png" class="container">
+                  <h4>传奇角色</h4>
+                 <p>探索不断增加的强大英雄，他们各自拥有独特的性格，特长和技能。</p></div>
+              <div class="col"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--Section: call to action-->
+
+
+    <!--Section: articles-->
+    <section>
+      <div style="background-image:url('./img/newplan/webBG01.jpg')">
+        <div class="container-fluid row">
+          <div class="col"></div>
+          <div class="col"><img src="img\newplan\squad.png" style="max-width: 170%; margin: 40px;"></div>
+          <div class="col"></div>
+          <div class="col">
+            <div style="padding: 40% 0% 40% 0%;">
+              <h1 style="font-weight: bold; color: #111; padding-bottom: 10%;">传奇改变游戏</h1>
+              <p style="color: #111; font-size: larger;">无论是奇人，放逐者，流浪者亦或是骗子--Apex竞赛都欢迎。看看每个英雄为你的小队能做些什么。
+              </p>
+              <div>
+                <a href="https://www.ea.com/zh-tw/games/apex-legends/about/characters" class="btn btn-outline-red" style="background-color: red; font-size:larger;font-weight: bold ;">
+                英雄介绍</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div  style="background-image: url(./img/newplan/BGmost.jpg);">
+        <div class="valk container" style="padding: 8%;">
+          <h1 style="text-align: center;">流传千古现已开放</h1>
+          <p style="text-align: center;">流传千古将推出全新的3V3竞技场、英雄瓦尔基里、出现变化的奥林匹斯、波切克弓、全新战斗通行证与其他更多内容！
+          </p>
+          <div class="text-center">
+            <a href="https://www.ea.com/zh-tw/games/apex-legends/legacy" class="btn btn-outline-white" style="font-size:larger;">
+            了解更多内容</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="articles" class="text-center py-5" style="background-image: url(./img/newplan/波浪背景02.png);">
+
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">学习笔记</h2>
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+
+            <!-- Card Narrower -->
+            <div class="card card-cascade narrower">
+
+              <!-- Card image -->
+              <div class="view view-cascade overlay">
+                <img class="card-img-top" src="img\newplan\lan.png"
+                  alt="Card image cap">
+                <a href="https://wattson1128.github.io/WeberSum/">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!-- Card content -->
+              <div class="card-body card-body-cascade">
+
+                <!-- Label -->
+                <h5 class="pink-text pb-2 pt-1">课程结业报告</h5>
+                <!-- Title -->
+                <h4 class="font-weight-bold card-title">Web应用基础</h4>
+                <!-- Text -->
+                <p class="card-text">关于本页面的一个学习性总结,因为时间关系不是很全面。</p>
+                <!-- Button -->
+
+              </div>
+
+            </div>
+            <!-- Card Narrower -->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <!-- Card Narrower -->
+            <div class="card card-cascade narrower">
+
+              <!-- Card image -->
+              <div class="view view-cascade overlay">
+                <img class="card-img-top" src="img\newplan\HTML封面.png"
+                  alt="Card image cap">
+                <a href="https://blog.csdn.net/ChenJ_1012/article/details/114871528?spm=1001.2014.3001.5501">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!-- Card content -->
+              <div class="card-body card-body-cascade">
+
+                <!-- Label -->
+                <h5 class="pink-text pb-2 pt-1">HTML学习笔记</h5>
+                <!-- Title -->
+                <h4 class="font-weight-bold card-title">第一篇Markdown文档</h4>
+                <!-- Text -->
+                <p class="card-text">本文在CSDN上发表后收到了不错的成绩，曾经冲击至新人榜前三。</p>
+                <!-- Button -->
+
+              </div>
+
+            </div>
+            <!-- Card Narrower -->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <!-- Card Narrower -->
+            <div class="card card-cascade narrower">
+
+              <!-- Card image -->
+              <div class="view view-cascade overlay">
+                <img class="card-img-top" src="img\newplan\CSS封面.png"
+                  alt="Card image cap">
+                <a href="https://wattson1128.github.io/CSSNotes/#C14">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!-- Card content -->
+              <div class="card-body card-body-cascade">
+
+                <!-- Label -->
+                <h5 class="pink-text pb-2 pt-1"></i>CSS学习笔记</h5>
+                <!-- Title -->
+                <h4 class="font-weight-bold card-title">HTML与CSS书写的学习笔记</h4>
+                <!-- Text -->
+                <p class="card-text">本文采用Markdown书写，通过HTML与CSS更改之后上传至GITHUB成为了一个静态网址。</p>
+                <!-- Button -->
+
+              </div>
+
+            </div>
+            <!-- Card Narrower -->
+            
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Container -->
+
+    </section>
+    <!--Section: articles-->
+
+    <!--Section: contact-->
+    <section id="contact" class="py-5" style="background-color: rgb(49, 45, 45);">
+
+      <div class="container" style="color: aliceblue;">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">联系我</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto mb-5">如果你想认识我，或者对我的视频/网站有什么意见请将你的联系方式和想要对我说的话填在下方，再发送给我，我会逐一查看并回复。</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-9 mb-md-0 mb-5">
+
+            <form>
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="contact-name" class="form-control">
+                    <label for="contact-name" class="">Your name</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="contact-email" class="form-control">
+                    <label for="contact-email" class="">Your email</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="contact-Subject" class="form-control">
+                    <label for="contact-Subject" class="">Subject</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                    <label for="contact-message">Your message</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+            </form>
+
+            <div class="text-center text-md-left">
+              <a class="btn btn-purple btn-md">Send(未完成)</a>
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="Student.html"><img src="img\newplan\apex-copyright-sigil-white.png"></a>
+              </li>
+              <li>
+                <a href="https://www.respawn.com/"><img src="img\newplan\apex-respawn-white-logo.png"></a>
+              </li>
+              <li>
+                <a href="https://www.gamerating.org.tw/"><img src="img\newplan\apex-zh-tw-15-rating.png"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+
+    </section>
+    <!--Section: contact-->
+
+  </main>
+  <!--Main layout-->
+
+  <!-- Footer -->
+  
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      <img src="img\newplan\self.png">
+      <p>© CSDN Karmen_:</p>
+      <a href="https://blog.csdn.net/ChenJ_1012?spm=1000.2115.3001.5343"> blog.csdn.net</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+    // MDB Lightbox Init
+    $(function () {
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
+    // 以下为动画效果新添加的两条语句
+    // Adding animations to the sections, 使用的是淡入, 你也可以试试zoomIn等动画
+    $("section").addClass("wow fadeIn");
+    // Animations Init, 注意必须放在ready方法中以防WOW对象没能加载成功
+    $(document).ready(function () {
+      new WOW().init();
+    });
+  </script>
+
+</body>
+
+</html>

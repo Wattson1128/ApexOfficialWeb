@@ -1,0 +1,40 @@
+/* Required for full background image */
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #000000 !important;/*黑色导航栏*/
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #563e91 !important;
+  }
+}
+
+.rgba-gradient {/*渐变效果*/
+  background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.404) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.363) 100%);
+  background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.336) 100%);
+}
+
+.streak.streak-photo {
+    background-attachment: fixed;
+  }
